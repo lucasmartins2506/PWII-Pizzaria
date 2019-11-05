@@ -1,0 +1,66 @@
+<div class="container">
+
+    <span class="header">Pizzaria Horacio</span>
+  
+    <div id="container_demo">
+  
+      <div id="wrapper">
+  
+        <div id="comanda">
+            <h1>Comanda</h1>
+  
+            <form [formGroup]="formcomanda" (ngSubmit)="onCalcular()" >
+              <p>
+                <label>Chopp</label>
+                <input type="text"
+                name="inChopp"
+                formControlName="chopp"
+                />
+              </p>
+  
+              <p>
+                  <label>Pizza</label>
+                  <input type="text"
+                  name="inPizza"
+                  formControlName="pizza"
+                  />
+              </p>
+  
+                <p>
+                    <label>Recheio</label>
+                    <input type="text" 
+                    name="inRecheio"
+                    formControlName="recheio"
+                    />    
+  
+                </p>
+  
+                 <p>
+                     <label>Pessoas</label>
+                     <input type="text" 
+                     name="inPessoas"
+                     formControlName="pessoas"
+                     />  
+                </p>
+  
+              <p class="keepcomanda">
+                  <input type="checkbox" name="inServico"
+                  formControlName="taxaServico"/>
+                  <label>Taxa de serviço</label>
+              </p>
+  
+              <p class="comanda button">
+                <input type="submit" value="Registrar">
+              </p>
+  
+            </form>
+            
+            <p class="about">Lucas Martins & Bianca Dhara</p>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
